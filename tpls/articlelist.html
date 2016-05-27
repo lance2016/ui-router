@@ -1,0 +1,35 @@
+<!--文章列表-->
+<h3>书籍</h3>
+<a ui-sref="index.addbook"><button class="btn btn-primary">增加书籍</button></a>
+<div >
+	<select class="form-control w200 mt10" ng-model="value" ng-change="LoadById(value)">
+	  <option value='1'>计算机</option>
+	  <option value='2'>天文</option>
+	  <option value='3'>农业</option>
+	  <option value='4'>科技</option>
+	  <option value='5'>古典</option>
+	  <option value='6'>外国名著</option>
+	
+	</select>
+	<table  class="table table-hover mt20" ng-controller="Bookshow">
+	<tr>
+	<td>编号</td><td>题目</td><td>作者</td><td>出版社</td><td>价格</td><td>备注</td><td>删除</td><td>修改</td>
+	</tr>
+	<tr ng-repeat="x in datas">
+		<td >{{x.bookid}}</td>
+		<td >{{x.bookname}}</td>
+		<td >{{x.author}}</td>
+		<td >{{x.press}}</td>
+		<td >{{x.price}}</td>
+		<td >{{x.memo}}</td>
+		<td>
+			<a ng-click="DeleteBook(x.bookid)">删除</a>
+			<!-- <a href="php/edit.php?action=del&bookid={{x.bookid}}";>删除</a> -->
+		</td>
+		<td>
+			<a ui-sref="index.rewrite({bookid:x.bookid})"  >编辑</a>
+		</td>
+	</tr>
+</table>
+		
+</div>

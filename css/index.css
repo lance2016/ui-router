@@ -1,0 +1,46 @@
+.nav, .pagination, .carousel, .panel-title, td a { cursor: pointer; }
+.w{width:100%}
+.w200{width:200px}
+.mt10{margin-top:10px}
+.mt20{margin-top:20px}
+.mt30{margin-top:30px}
+.mt40{margin-top:40px}
+
+div.welcome{width:800px;height:500px;position:absolute;top:50%;left:50%;margin-top:-250px;margin-left:-300px}
+
+.msg{width:100px;height:40px;display:block;line-height:35px;font-size:14px;position:fixed;top:300px;left:50%;margin-left:-50px;top:50%;margin-top:-20px}
+.span-pointer{cursor:pointer}
+.span-pointer:hover{background-color:#F45551}
+
+
+iframe.postpic{border:0}
+
+a:focus {  outline:none;   -moz-outline:none;}
+/* 导航颜色新定义 */
+.a-color{color:#999999}
+.a-color:hover{color:#999999}
+.a-color:active{color:#999999}
+.a-color:visited{color:#999999}
+.a-color-active{color:#ffffff}
+.a-color-active:hover{color:#ffffff}
+.a-color-active:active{color:#ffffff}
+.a-color-active:visited{color:#ffffff}
+
+/* 侧边栏颜色新定义 */
+.a-bgcolor{background-color:#ffffff;}
+.a-bgcolor:hover{background-color:#ffffff}
+.a-bgcolor:active{background-color:#ffffff}
+.a-bgcolor:visited{background-color:#ffffff}
+.a-bgcolor-active{background-color:#eee}
+.a-bgcolor-active:hover{background-color:#eee}
+.a-bgcolor-active:active{background-color:#eee}
+.a-bgcolor-active:visited{background-color:#eee}
+
+#exit{color:#E6162D}
+
+
+
+.login
+{
+	background:#F4F4F4;
+}

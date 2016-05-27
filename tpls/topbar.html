@@ -1,0 +1,51 @@
+<ol class="breadcrumb" style="font-size:1.2em">
+  <li><a href="#/index/main/welcome" >Home</a></li>
+ 
+   <li><a ui-sref=" index.article" ng-click="change($event)">书籍列表</a></li>
+   <li><a ui-sref=" index.search" ng-click="change($event)">搜索</a></li>
+   <li>
+       <a ui-sref="index.write" ng-click="change($event)" >写文章</a>
+   </li>
+   
+  
+</ol>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" ng-controller="login"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" 
+               aria-hidden="true">×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              登录
+            </h4>
+         </div>
+         <div class="modal-body">
+			<form role="form" action="" method="post" class="login-form">
+			       <div class="form-group">
+			          <label class="sr-only" for="form-username" >Username</label>
+			          <input type="text" ng-model="user" placeholder="Username..."  class="form-username form-control" >
+			       </div>
+				   
+			       <div class="form-group">
+			          <label class="sr-only" for="form-password">Password</label>
+			          <input type="password" ng-model="password" placeholder="Password..." class="form-password form-control" >
+			        </div>
+			    <button ng-click="a()" class="btn btn-info">Sign in!</button>
+			</form>
+         </div>
+       <!--   <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">
+               关闭
+            </button>
+            <button type="button" class="btn btn-primary" ng-click="a()">
+               登录
+            </button>
+         </div> -->
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

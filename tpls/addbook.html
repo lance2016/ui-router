@@ -1,0 +1,47 @@
+<div ng-controller='AddBook'>
+	<form  >
+		<legend>增加书籍</legend>
+		<div class="form-group">
+			<label>编号</label>
+			<input type="text" class="form-control" ng-model="bookid"/>
+		</div>
+		<div class="form-group">
+			<label>题目</label>
+			<input type="text" class="form-control" ng-model="bookname"/>
+		</div>
+		<div class="form-group">
+			<label>作者</label>
+			<input type="text" class="form-control" ng-model="author"/>
+		</div>
+		<div class="form-group">
+			<label>出版社</label>
+			<input type="text" class="form-control" ng-model="press"/>
+		</div>
+		<div class="form-group">
+			<label>价格</label>
+			<input type="text" class="form-control" ng-model="price"/>
+		</div>
+		<div class="form-group">
+			<label>备注</label>
+			<input type="text" class="form-control" ng-model="memo" placeholder="暂无"  ng-init="memo='暂无'"/>
+		</div>
+		
+		
+		<div class="form-group">
+			<label>选择分类</label>
+			<select class="form-control w200 mt10" ng-model="mid">
+			
+			  <option value='1' >火影忍者</option>
+			  <option value='2'>海贼王</option>
+			  <option value='3'>死神</option>
+			  <option value='4'>名侦探柯南</option>
+			 <option value='5'>妖精的尾巴</option>
+			 <option value='6'>犬夜叉</option>
+			 
+			</select>
+		</div>		
+		<button type="submit" class="btn btn-default"  ng-click="addBook()">提交</button>
+	</form>
+	<!-- <p style="font-size:20px;color:green">{{result}}</p> -->
+</div>				
+

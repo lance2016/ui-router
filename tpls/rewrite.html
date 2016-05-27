@@ -1,0 +1,43 @@
+<div ng-controller='ReWriteArticle'>	
+	<form role="form">
+		<div><input ng-model="id" ng-show="false"></input></div>
+		<div class="form-group">
+		  <label for="name">编号</label>
+		  <input type="text" class="form-control"  ng-model="bookid"
+			 placeholder="请输入编号">
+	   </div>
+	   
+	   <div class="form-group">
+		  <label for="name">题目</label>
+		  <input type="text" class="form-control"  ng-model="bookname"
+			 placeholder="请输入题目">
+	   </div>
+	   
+	   <div class="form-group">
+		  <label for="name">作者</label>
+		  <input type="text" class="form-control"  ng-model="author"
+			 placeholder="请输入作者">
+	   </div>
+	   
+	   <div class="form-group">
+		  <label for="name">出版社</label>
+		  <input type="text" class="form-control"  ng-model="press"
+			 placeholder="请输入出版社">
+	   </div>
+	   
+	   <div class="form-group">
+		  <label for="name">价格</label>
+		  <input type="text" class="form-control"  ng-model="price"
+			 placeholder="请输入价格">
+	   </div>
+	   
+	   <div class="form-group">
+		  <label for="name">备注</label>
+		  <input type="text" class="form-control"  ng-model="memo"
+			 placeholder="请输入备注">
+	   </div>
+	   
+	   <button type="submit" class="btn btn-info" ng-click="Submit(bookid,bookname,author,press,price,memo)">提交</button>
+	</form>
+</div>				
+
